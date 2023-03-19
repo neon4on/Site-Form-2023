@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Форма регистрации</title>
+</head>
+<body>
+    <div>
+        <form action="index.php" method="post">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center">Личные данные</h2>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="form-group col-sm-6">
+                    <label for="name" class="h4">Имя</label>
+                    <input type="text" class="form-control" id="name" placeholder="Пётр" required>
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="surname" class="h4">Фамилия</label>
+                    <input type="text" class="form-control" id="surname" placeholder="Петро" required>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center">Ваш профиль</h2>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="form-group col-sm-6">
+                    <label for="email" class="h4">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="exampleFormControlFile1" class="h4">Фото</label>
+                    <input type="file" accept="image/*" class="form-control-file" id="exampleFormControlFile1" required>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="container">
+                <div class="row">
+                    <div class="form-group col-sm-6">
+                        <label for="name" class="h4">Возраст</label><br>
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            1
+                        </label>
+                        
+                        <br>
+
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            2
+                        </label>
+
+                        <br>
+
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            3
+                        </label>
+
+                        <br>
+
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="surname" class="h4">Интересы</label><br>
+                        <input class="form-check-input" type="checkbox" value="" id="programing">
+                        <label class="form-check-label" for="programing">
+                            1
+                        </label>
+
+                        <br>
+
+                        <input class="form-check-input" type="checkbox" value="" id="business">
+                        <label class="form-check-label" for="business">
+                            2
+                        </label>
+
+                        <br>
+
+                        <input class="form-check-input" type="checkbox" value="" id="cook">
+                        <label class="form-check-label" for="cook">
+                            3
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="form-row align-items-center">
+                <div class="col-auto my-1">
+                    <label for="" class="h4">Выберите курс</label><br>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option selected>Choose...</option>
+                        <option value="1">Минимальный</option>
+                        <option value="2">Стандартный</option>
+                        <option value="3">Повышенный</option>
+                    </select>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for="message" class="h4 ">Биография</label>
+                <textarea id="message" class="form-control" rows="5" placeholder="Расскажите о себе. Хорошим вариантом будет, если вы опишите свои сильные стороны" required></textarea>
+            </div>
+
+
+
+            <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
+            <!-- <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div> -->
+        </form>
+        <section id="copy-right">
+			<div class="copy-right-sec">
+				<a>Site Form 2023 Powerd By</a><br>
+                <a href="https://github.com/neon4on">Kamenskikh Valeriy</a> 
+			</div>
+		</section>
+    </div>
+</body>
+</html>

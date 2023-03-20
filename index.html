@@ -11,7 +11,7 @@
 </head>
 <body>
     <div>
-        <form action="index.php" method="post">
+        <form action="http://localhost/goddamn/www/index.php" method="post">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -24,11 +24,11 @@
             <div class="row">
                 <div class="form-group col-sm-6">
                     <label for="name" class="h4">Имя</label>
-                    <input type="text" class="form-control" id="name" placeholder="Пётр" required>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Пётр" required>
                 </div>
                 <div class="form-group col-sm-6">
                     <label for="surname" class="h4">Фамилия</label>
-                    <input type="text" class="form-control" id="surname" placeholder="Петро" required>
+                    <input type="text" class="form-control" id="surname" name="surname" placeholder="Петро" required>
                 </div>
             </div>
 
@@ -45,11 +45,11 @@
             <div class="row">
                 <div class="form-group col-sm-6">
                     <label for="email" class="h4">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
                 </div>
                 <div class="form-group col-sm-6">
-                    <label for="exampleFormControlFile1" class="h4">Фото</label>
-                    <input type="file" accept="image/*" class="form-control-file" id="exampleFormControlFile1" required>
+                    <label for="fileImg" class="h4">Фото</label>
+                    <input type="file" accept="image/*" class="form-control-file" id="fileImg" name="fileImg" required>
                 </div>
             </div>
 
@@ -58,23 +58,23 @@
             <div class="container">
                 <div class="row">
                     <div class="form-group col-sm-6">
-                        <label for="name" class="h4">Возраст</label><br>
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                        <label class="form-check-label" for="exampleRadios1">
+                        <label for="" class="h4">Возраст</label><br>
+                        <input class="form-check-input" type="radio" id="Radios" name="Radios" value="1" checked>
+                        <label class="form-check-label" for="Radios">
                             1
                         </label>
                         
                         <br>
 
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                        <label class="form-check-label" for="exampleRadios2">
+                        <input class="form-check-input" type="radio" id="Radios" name="Radios" value="2">
+                        <label class="form-check-label" for="Radios">
                             2
                         </label>
 
                         <br>
 
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                        <label class="form-check-label" for="exampleRadios3">
+                        <input class="form-check-input" type="radio" id="Radios" name="Radios" value="3">
+                        <label class="form-check-label" for="Radios">
                             3
                         </label>
 
@@ -82,23 +82,23 @@
 
                     </div>
                     <div class="form-group col-sm-6">
-                        <label for="surname" class="h4">Интересы</label><br>
-                        <input class="form-check-input" type="checkbox" value="" id="programing">
-                        <label class="form-check-label" for="programing">
+                        <label for="" class="h4">Интересы</label><br>
+                        <input class="form-check-input" type="checkbox" value="1" id="CheckPrograming" name="CheckPrograming">
+                        <label class="form-check-label" for="CheckPrograming">
                             1
                         </label>
 
                         <br>
 
-                        <input class="form-check-input" type="checkbox" value="" id="business">
-                        <label class="form-check-label" for="business">
+                        <input class="form-check-input" type="checkbox" value="2" id="CheckBusiness" name="CheckBusiness">
+                        <label class="form-check-label" for="CheckBusiness">
                             2
                         </label>
 
                         <br>
 
-                        <input class="form-check-input" type="checkbox" value="" id="cook">
-                        <label class="form-check-label" for="cook">
+                        <input class="form-check-input" type="checkbox" value="3" id="CheckCook" name="CheckCook">
+                        <label class="form-check-label" for="CheckCook">
                             3
                         </label>
                     </div>
@@ -110,11 +110,11 @@
             <div class="form-row align-items-center">
                 <div class="col-auto my-1">
                     <label for="" class="h4">Выберите курс</label><br>
-                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                        <option selected>Choose...</option>
-                        <option value="1">Минимальный</option>
-                        <option value="2">Стандартный</option>
-                        <option value="3">Повышенный</option>
+                    <select class="custom-select mr-sm-2" id="CheckSelect" name="CheckSelect">
+                        <option selected></option>
+                        <option value="Минимальный">Минимальный</option>
+                        <option value="Стандартный">Стандартный</option>
+                        <option value="Повышенный">Повышенный</option>
                     </select>
                 </div>
             </div>
@@ -123,12 +123,12 @@
 
             <div class="form-group">
                 <label for="message" class="h4 ">Биография</label>
-                <textarea id="message" class="form-control" rows="5" placeholder="Расскажите о себе. Хорошим вариантом будет, если вы опишите свои сильные стороны" required></textarea>
+                <textarea id="message" name="message" class="form-control" rows="5" placeholder="Расскажите о себе. Хорошим вариантом будет, если вы опишите свои сильные стороны" required></textarea>
             </div>
 
 
 
-            <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
+            <button type="submit" name="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
             <!-- <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div> -->
         </form>
         <section id="copy-right">

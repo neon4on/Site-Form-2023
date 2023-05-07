@@ -24,5 +24,5 @@
 ![image](https://user-images.githubusercontent.com/86181396/226812752-9bd8ccf2-5124-4450-a573-08e09cafe434.png)
 
 Результат (index.php)
-![image](https://user-images.githubusercontent.com/86181396/226812809-6c7a08f4-076a-49e9-ad71-500fce537f42.png)
+![image](https://user-images.githubusercontent.com/86181396/236698501-578ecaee-f424-4819-a16a-3465196bc3da.png)
 
